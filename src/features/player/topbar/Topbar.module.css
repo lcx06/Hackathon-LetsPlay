@@ -1,0 +1,27 @@
+
+.topbar {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+.topbar__logo {
+  position: relative;
+  height: 3.125rem;
+  width: 14rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbar__search {
+  width: 10rem;
+}
+
+.topbar__user {
+  margin-left: auto;
+}

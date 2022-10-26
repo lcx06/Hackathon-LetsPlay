@@ -1,0 +1,169 @@
+.songs__container {
+  display: inline-block;
+  width: 100%;
+}
+
+.songs__header {
+
+  width: 100%;
+  height: 16rem;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.songs__header__bars {
+  background-image: url("assets/fondo1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.songs__header__image {
+  width: 256px;
+  height: 256px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  border-radius: 5px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(35, 231, 150, 1) 0%,
+    rgba(21, 195, 189, 1) 100%
+  );
+
+  z-index: 2;
+}
+
+
+.songs__header__content {
+  width: 65%;
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+
+  z-index: 2;
+}
+
+.songs__header__content h1 {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.songs__header__content p {
+  white-space: pre-line;
+  margin-bottom: 3rem;
+}
+
+.songs__header__content button {
+  border-radius: 25px;
+  border: 1px solid rgba(35, 231, 150, 1);
+  padding: 5px 10px;
+  width: max-content;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    180deg,
+    rgba(35, 231, 150, 1) 0%,
+    rgba(21, 195, 189, 1) 100%
+  );
+}
+
+.songs__header__content button img {
+  filter: brightness(0) invert(1);
+  margin-right: 10px;
+}
+
+.songs__table {
+  width: calc(100% - 2px);
+  border-collapse: collapse;
+  margin-left: 2px;
+  text-align: center;
+  height: 100%;
+
+  overflow-y: scroll;
+  margin-bottom: 2rem;
+}
+
+.songs__table th {
+  border: 3px solid rgb(28, 182, 118);
+}
+
+.songs__table th:first-of-type {
+  border-left: none;
+}
+
+.songs__table th:last-of-type {
+  border-right: none;
+}
+
+.songs__table td {
+  border-left: 3px solid rgb(28, 182, 118);
+  border-right: 3px solid rgb(28, 182, 118);
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  
+  transition: transform 0.2s ease-in-out;
+}
+
+.songs__table tr {
+  transition: transform 0.2s ease-in-out;
+}
+
+.songs__table tr:hover :not(th) {
+  transform: scale(1.04);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.songs__table td:first-of-type {
+  border-left: none;
+}
+
+.songs__table td:last-of-type {
+  border-right: none;
+}
+
+.songs_add_more {
+  width: 20rem;
+  height: 2rem;
+  left: calc(50% - 10rem);
+
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(63, 196, 63);
+  border: 1px solid rgb(63, 196, 63);
+  position: absolute;
+
+  justify-content: center;
+  align-items: center;
+
+  color: #f4f4f4;
+  border-radius: 5px;
+  bottom: 7px;
+}
+
+.songs_add_more i {
+  margin-right: 5px;
+}

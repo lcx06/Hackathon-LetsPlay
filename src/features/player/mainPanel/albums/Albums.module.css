@@ -1,0 +1,50 @@
+.albums__container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 95%;
+
+    padding: 20px;
+}
+
+.albums__item {
+    list-style: none;
+    width: 100%;
+
+    background-color: #083d2e;
+    border-radius: 25px;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    grid-column: span 1 / span 1;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.albums__item:hover {
+    transform: scale(1.05);
+}
+
+.albums__item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.albums__item h3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 96%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .albums__container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: center;
+    }
+}
